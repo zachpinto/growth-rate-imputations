@@ -4,6 +4,8 @@ Growth Rate Imputations for Time Series Data
 This streamlit-based application is designed to impute missing values in datasets across time series data based on implied growth rates. 
 It allows users to upload their data, select relevant columns for analysis, and choose how to handle missing data points with options for different interpolation methods.
 
+Demo: https://growth-rate-imputations.streamlit.app/
+
 ## Features
 
 - **Upload**: Users can upload their time series data in CSV or Excel formats.
