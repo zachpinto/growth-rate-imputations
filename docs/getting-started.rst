@@ -7,7 +7,7 @@ To get started with the Growth Rate Imputations for Time Series Data application
 
 .. code-block:: bash
 
-    git clone https://placeholder.git
+    git clone https://github.com/zachpinto/growth-rate-imputations.git
     cd growth-rate-imputations
 
 2. Install the required Python packages:

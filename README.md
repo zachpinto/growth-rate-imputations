@@ -17,7 +17,7 @@ It allows users to upload their data, select relevant columns for analysis, and 
 
 #### Clone the repository:
 ```bash
-git clone https://placeholder.git
+git clone https://github.com/zachpinto/growth-rate-imputations.git
 cd growth-rate-imputations
 ```
 
