@@ -1,59 +1,50 @@
-Title
+Growth Rate Imputations for Time Series Data
 ==============================
 
-Demo: 
+This streamlit-based application is designed to impute missing values in datasets across time series data based on implied growth rates. 
+It allows users to upload their data, select relevant columns for analysis, and choose how to handle missing data points with options for different interpolation methods.
 
-## Introduction
-- **Background**:
-    - Test
-- **Objectives**:
-    - Test
-- **Research Questions**:
-    - Test
+## Features
 
-## Data 
-- **Data Sources**:
-    - Test
-- **Data Attributes**:
-    - Test
+- **Upload**: Users can upload their time series data in CSV or Excel formats.
+- **Time Period Selection**: Users can specify which columns represent the start and end years for the imputation process.
+- **Missing Data Handling**: The application provides options to calculate missing data points based on an average of all rows or an average of rows within the same category.
+- **Interpolation Methods**: Users can choose between linear and exponential interpolation methods to fill in missing data points.
+- **Download**: After imputation, users can download the resulting dataset directly from the application.
 
-## Methodology
-- **Data Processing**:
-    - Test
-- **Geospatial Analysis**:
-    - Test
-- **Statistical Analysis**:
-    - Test
-- **User Interface**:
-    - Test
 
-## Analysis
-- **Descriptive Analysis**:
-    - Test
-- **Proximity Analysis**:
-    - Test
-- **Correlation Analysis**:
-    - Test
+### Local Installation
 
-## Results
-- **Findings**:
-    - Test
-- **Visualizations**:
-    - Test
+#### Clone the repository:
+```bash
+git clone https://placeholder.git
+cd growth-rate-imputations
+```
 
-## Discussion
-- **Interpretation**:
-    - Test
-- **Limitations**:
-    - Test
-- **Future Work**:
-    - Test
+#### Install the required packages:
+```bash
+pip install -r requirements.txt
+```
 
-## Appendix
-- **Technical Details**:
-    - Test
-- **References**:
-    - Test
+#### Run the Streamlit application:
+```bash
+streamlit run app.py
+```
+
+#### Demo:
+As an example, you can use the `data/raw/demo.xlsx` file to test the application. 
+The file contains sample time series data with missing values that can be imputed using the application.
+
+The output data post-imputation is located in the `data/processed` folder as `imputed_data.csv`.
+
+#### NOTE: The following packages are required for the Streamlit application to run properly:
+
+- Python 3.6+
+- Streamlit
+- Pandas
+- Numpy
+- Openpyxl
+
 
 Project Organization
 ------------
@@ -62,23 +53,13 @@ Project Organization
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -87,19 +68,9 @@ Project Organization
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │   ├── models       
+    │   │   │               
+    │   │   ├── model.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
